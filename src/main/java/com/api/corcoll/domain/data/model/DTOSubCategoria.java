@@ -9,29 +9,60 @@ import java.io.Serializable;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class DTOSubCategoria implements Serializable {
 
-    @Getter
-    @Setter
     private Integer id;
-
-    @Getter
-    @Setter
     private String nombre;
-
-    @Getter
-    @Setter
     private String descripcion;
-
-    @Getter
-    @Setter
     private String tsFechaCreacion;
-
-    @Getter
-    @Setter
     private int idCategoria;
-
-    @Getter
-    @Setter
     private DTOCategoria dtoCategoria;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getTsFechaCreacion() {
+        return tsFechaCreacion;
+    }
+
+    public void setTsFechaCreacion(String tsFechaCreacion) {
+        this.tsFechaCreacion = tsFechaCreacion;
+    }
+
+    public int getIdCategoria() {
+        return idCategoria;
+    }
+
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
+    public DTOCategoria getDtoCategoria() {
+        return dtoCategoria;
+    }
+
+    public void setDtoCategoria(DTOCategoria dtoCategoria) {
+        this.dtoCategoria = dtoCategoria;
+    }
 
     private static final long serialVersionUID = 1L;
 

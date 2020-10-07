@@ -10,69 +10,150 @@ import java.util.List;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class DTOColeccionUsuario implements Serializable {
 
-    @Getter
-    @Setter
     private Integer id;
-
-    @Getter
-    @Setter
     private Integer idColeccion;
-
-    @Getter
-    @Setter
     private Integer idUsuario;
-
-    @Getter
-    @Setter
     private String nombre;
-
-    @Getter
-    @Setter
     private String descripcion;
-
-    @Getter
-    @Setter
     private String imagen;
-
-    @Getter
-    @Setter
     private String marca;
-
-    @Getter
-    @Setter
     private String tsFechaCreacion;
-
-    @Getter
-    @Setter
     private Boolean reaccion = false;
-
-    @Getter
-    @Setter
     private Integer cantidadReacciones;
-
-    @Getter
-    @Setter
     private Integer cantidadComentarios;
-
-    @Getter
-    @Setter
     private DTOSubCategoria dtoSubCategoria;
-
-    @Getter
-    @Setter
     private DTOUsuario dtoUsuario;
-
-    @Getter
-    @Setter
     private List<DTODetalleColeccionUsuario> dtoDetalleColeccionUsuarioList;
-
-    @Getter
-    @Setter
     private List<DTOComentario> dtoComentarioList;
-
-    @Getter
-    @Setter
     private List<DTOReaccion> dtoReaccionList;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getIdColeccion() {
+        return idColeccion;
+    }
+
+    public void setIdColeccion(Integer idColeccion) {
+        this.idColeccion = idColeccion;
+    }
+
+    public Integer getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(Integer idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getTsFechaCreacion() {
+        return tsFechaCreacion;
+    }
+
+    public void setTsFechaCreacion(String tsFechaCreacion) {
+        this.tsFechaCreacion = tsFechaCreacion;
+    }
+
+    public Boolean getReaccion() {
+        return reaccion;
+    }
+
+    public void setReaccion(Boolean reaccion) {
+        this.reaccion = reaccion;
+    }
+
+    public Integer getCantidadReacciones() {
+        return cantidadReacciones;
+    }
+
+    public void setCantidadReacciones(Integer cantidadReacciones) {
+        this.cantidadReacciones = cantidadReacciones;
+    }
+
+    public Integer getCantidadComentarios() {
+        return cantidadComentarios;
+    }
+
+    public void setCantidadComentarios(Integer cantidadComentarios) {
+        this.cantidadComentarios = cantidadComentarios;
+    }
+
+    public DTOSubCategoria getDtoSubCategoria() {
+        return dtoSubCategoria;
+    }
+
+    public void setDtoSubCategoria(DTOSubCategoria dtoSubCategoria) {
+        this.dtoSubCategoria = dtoSubCategoria;
+    }
+
+    public DTOUsuario getDtoUsuario() {
+        return dtoUsuario;
+    }
+
+    public void setDtoUsuario(DTOUsuario dtoUsuario) {
+        this.dtoUsuario = dtoUsuario;
+    }
+
+    public List<DTODetalleColeccionUsuario> getDtoDetalleColeccionUsuarioList() {
+        return dtoDetalleColeccionUsuarioList;
+    }
+
+    public void setDtoDetalleColeccionUsuarioList(List<DTODetalleColeccionUsuario> dtoDetalleColeccionUsuarioList) {
+        this.dtoDetalleColeccionUsuarioList = dtoDetalleColeccionUsuarioList;
+    }
+
+    public List<DTOComentario> getDtoComentarioList() {
+        return dtoComentarioList;
+    }
+
+    public void setDtoComentarioList(List<DTOComentario> dtoComentarioList) {
+        this.dtoComentarioList = dtoComentarioList;
+    }
+
+    public List<DTOReaccion> getDtoReaccionList() {
+        return dtoReaccionList;
+    }
+
+    public void setDtoReaccionList(List<DTOReaccion> dtoReaccionList) {
+        this.dtoReaccionList = dtoReaccionList;
+    }
 
     private static final long serialVersionUID = 1L;
 }
